@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pallet Plywood 3D Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    html, body { margin:0; height:100%; background:#111; }
+    model-viewer { width:100vw; height:100vh; }
+    .info { position:absolute; top:10px; left:10px; color:white; background:rgba(0,0,0,0.4); padding:6px; border-radius:4px; font-family:sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="info">Tap & drag to rotate • Pinch to zoom</div>
+  <model-viewer src="https://drive.google.com/uc?export=download&id=1W99V0d-t44Hgu-s3LqIjiXRvEyGbqJDc"
+                alt="Pallet Plywood"
+                auto-rotate
+                camera-controls
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                exposure="1"
+                shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
